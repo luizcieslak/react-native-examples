@@ -27,4 +27,14 @@ Examples and studies using different implementations in React Native
 * Chat
 * App Intro
 
+### State Management
+
+* redux
+* redux-saga
+
+### Navigation
+
+* react-navigation
+
+
 
