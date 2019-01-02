@@ -2,6 +2,10 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
 export default Tab1 = ({ navigation }) => {
+  navigationOptions = () => {
+    title: 'Home'
+  }
+
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Tab1</Text>
