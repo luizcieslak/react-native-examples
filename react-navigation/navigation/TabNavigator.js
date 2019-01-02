@@ -3,12 +3,12 @@ import { createBottomTabNavigator, createAppContainer } from 'react-navigation'
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
 //import screens
-import Tab1 from '../components/Tab1'
+import StackNavigator from './StackNavigator'
 import Tab2 from '../components/Tab2'
 import Tab3 from '../components/Tab3'
 
 const TabNavigator = createBottomTabNavigator({
-  Tab1: Tab1,
+  Tab1: StackNavigator,
   Tab2: Tab2,
   Tab3: Tab3,
 }, {

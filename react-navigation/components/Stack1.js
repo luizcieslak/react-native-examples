@@ -1,11 +1,17 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Button } from 'react-native';
 
-export default Tab1 = ({ navigation }) => {
+export default Stack1 = ({ navigation }) => {
+
+  navigationOptions = {
+    title: 'Title'
+  }
+
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Tab1</Text>
+      <Text style={styles.title}>Stack1</Text>
       <Text style={styles.subtitle}>Page1</Text>
+      <Button onPress={() => navigation.navigate('Stack2')} title={'Next'} />
     </View>
   )
 }

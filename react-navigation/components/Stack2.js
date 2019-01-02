@@ -1,10 +1,10 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-export default Tab1 = ({ navigation }) => {
+export default Stack2 = ({ navigation }) => {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Tab1</Text>
+      <Text style={styles.title}>Stack2</Text>
       <Text style={styles.subtitle}>Page1</Text>
     </View>
   )
