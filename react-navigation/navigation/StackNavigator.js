@@ -1,5 +1,5 @@
 import React from 'react';
-import { StackNavigator, createStackNavigator } from 'react-navigation'
+import { createStackNavigator } from 'react-navigation'
 
 import Stack1 from '../components/Stack1'
 import Stack2 from '../components/Stack2'

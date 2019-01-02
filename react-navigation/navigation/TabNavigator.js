@@ -5,12 +5,12 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 //import screens
 import StackNavigator from './StackNavigator'
 import Tab2 from '../components/Tab2'
-import Tab3 from '../components/Tab3'
+import DrawerNavigator from './DrawerNavigator'
 
 const TabNavigator = createBottomTabNavigator({
   Tab1: StackNavigator,
   Tab2: Tab2,
-  Tab3: Tab3,
+  Tab3: DrawerNavigator,
 }, {
     //centralizing tabBarIcon config
     defaultNavigationOptions: ({ navigation }) => ({
