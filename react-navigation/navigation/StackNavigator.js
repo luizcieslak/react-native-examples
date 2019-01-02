@@ -3,6 +3,7 @@ import { StackNavigator, createStackNavigator } from 'react-navigation'
 
 import Stack1 from '../components/Stack1'
 import Stack2 from '../components/Stack2'
+import LogoTitle from '../components/LogoTitle';
 
 export default createStackNavigator({
   Stack1: Stack1,
@@ -13,6 +14,7 @@ export default createStackNavigator({
     headerStyle: {
       backgroundColor: '#fff',
     },
-    title: navigation.state.routeName
+    //title: navigation.state.routeName
+    headerTitle: <LogoTitle title={navigation.state.routeName} />
   }),
 })
