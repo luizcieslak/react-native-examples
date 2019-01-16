@@ -1,7 +1,9 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
+import { createStackNavigator } from 'react-navigation'
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
-export default Drawer1 = ({ navigation }) => {
+const Drawer1 = ({ navigation }) => {
 
   navigationOptions = {
     title: 'Title'
@@ -34,3 +36,22 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
 });
+
+export default createStackNavigator({
+  Drawer1: Drawer1,
+}, {
+  defaultNavigationOptions: ({ navigation }) => ({
+    headerTintColor: '#000',
+    headerStyle: {
+      backgroundColor: '#fff',
+    },
+    headerLeft: <Ionicons 
+      name={'ios-menu'} 
+      size={30} 
+      style={{ marginLeft: 5}} 
+      onPress={() => navigation.toggleDrawer()} 
+    />,
+    //title: navigation.state.routeName
+    headerTitle: <LogoTitle title={navigation.state.routeName}/>
+  }),
+})
