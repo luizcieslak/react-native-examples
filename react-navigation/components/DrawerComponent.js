@@ -1,8 +1,8 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button, ScrollView } from 'react-native';
-import { DrawerItems, SafeAreaView } from 'react-navigation';
+import { StyleSheet, Text, View, SafeAreaView, ScrollView } from 'react-native';
+import { DrawerItems } from 'react-navigation';
 
-export default DrawerComponent = (props) => (
+const DrawerComponent = (props) => (
   <View style={styles.container}>
     <ScrollView>
       <SafeAreaView style={styles.header} forceInset={{ top: 'always', horizontal: 'never' }}>
@@ -32,3 +32,5 @@ const styles = StyleSheet.create({
     bottom: 0
   }
 });
+
+export default DrawerComponent;

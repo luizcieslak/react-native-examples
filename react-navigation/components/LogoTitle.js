@@ -1,7 +1,7 @@
 import React from 'react';
 import { Image, View, Text } from 'react-native'
 
-export default LogoTitle = ({ title }) => {
+const LogoTitle = ({ title }) => {
   return (
     <View style={{ flex: 1, flexDirection: 'row' }}>
       <Image
@@ -12,3 +12,5 @@ export default LogoTitle = ({ title }) => {
     </View>
   )
 }
+
+export default LogoTitle;

@@ -8,7 +8,7 @@ import DrawerComponent from '../components/DrawerComponent';
 
 // Don't forget to change MainActivity.java after linking react-native-gesture-handler
 // https://stackoverflow.com/questions/53394982/react-navigation-swipe-on-drawer-does-not-work-in-android
-export default createDrawerNavigator({
+const DrawerNavigator = createDrawerNavigator({
     Drawer1: Drawer1,
     Drawer2: Drawer2
 }, {
@@ -33,3 +33,5 @@ export default createDrawerNavigator({
     }
   })
 })
+
+export default DrawerNavigator;

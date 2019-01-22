@@ -20,6 +20,15 @@
     "react-test-renderer": "16.6.3"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "react-native",
+    "transform": {
+      "^.+\\.(js)$": "<rootDir>/node_modules/react-native/jest/preprocessor.js"
+    },
+    "transformIgnorePatterns": [
+      "node_modules/(?!(jest-)?react-native|@react-navigation|react-navigation|react-navigation-redux-helpers)"
+    ],
+    "setupFiles": [
+      "./jest.setup.js"
+    ]
   }
 }

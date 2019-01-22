@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-export default Tab2 = ({ navigation }) => {
+const Tab2 = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Tab2</Text>
@@ -28,3 +28,5 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
 });
+
+export default Tab2;

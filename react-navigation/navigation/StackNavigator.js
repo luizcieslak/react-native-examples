@@ -5,7 +5,7 @@ import Stack1 from '../components/Stack1'
 import Stack2 from '../components/Stack2'
 import LogoTitle from '../components/LogoTitle';
 
-export default createStackNavigator({
+const StackNavigator = createStackNavigator({
   Stack1: Stack1,
   Stack2: Stack2,
 }, {
@@ -18,3 +18,5 @@ export default createStackNavigator({
     headerTitle: <LogoTitle title={navigation.state.routeName} />
   }),
 })
+
+export default StackNavigator;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-export default Stack2 = ({ navigation }) => {
+const Stack2 = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Stack2</Text>
@@ -28,3 +28,5 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
 });
+
+export default Stack2;
